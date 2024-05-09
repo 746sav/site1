@@ -1,16 +1,32 @@
-<!doctype html>
+<!doctype html>                                                                                               <!--Объявление типа документа-->
+
+                                                                                            
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" />                                                                                    <!--универсальная кодировка-->
     <link href="styles/style.css" rel="stylesheet" type="text/css" /> 
-    <title>Моя тестовая страница</title>
+    <title>Моя тестовая страница</title>                   <!--устанавливает заголовок страницы во вкладке браузера или закладках/избранном-->
+    <meta name="author" content="Smokotina A.V." />
+    <meta
+       name="description"
+       content="Данный сайт создан в качестве демонстрационного мастериала о навыках Смокотиной А.В." />
     
+       
   </head>
   <body>
+
     <h1>Мой главный заголовок</h1>
-    <button>Change user</button>
- 
-    <p>Это <strong>одиночный</strong> абзац</p>
+    <button class="myButton">Сменить имя</button>                                                                   <!--смена имени кнопки -->
+    <style>
+      .myButton {
+        cursor: pointer;
+      }
+      a {
+        color: #29572b; /* Цвет текста */
+      }
+    </style>
+    <p>Данная страица является демонстрационным примером навыков ее автора.</p>
+    <!-- <p>Это <strong>одиночный</strong> абзац</p>
     <h2>Мой заголовок верхнего уровня</h2>
         <p>Mozilla, мы являемся мировым сообществом</p>
             <ul>
@@ -27,9 +43,26 @@
                 <li>строителей</li>
             </ol>
         <p>работающих вместе ...</p>
-    <h4>Мой под-подзаголовок</h4>
-    <a href="https://www.mozilla.org/ru/about/manifesto/details/"> Манифест Mozilla</a>
+    <h4>Мой под-подзаголовок</h4> -->
     
-    <script src="scripts/main.js"></script>
+    
+    <div class="tab">                                                                                       <!--Создание вкладок на странице-->
+      <button class="tablinks" onclick="openCity(event, 'Ссылки')">Ссылки на работы</button>
+      <button class="tablinks" onclick="openCity(event, 'Для связи')">Для связи</button>
+    </div>
+    
+    <div id="Ссылки" class="tabcontent">
+      <h3>Ссылки на работы автора</h3>
+      <p>Ссылка на Гитхаб: <a href="https://github.com/746sav/site1" title="Мой гитхаб" target="_blank"> reference from my githab</a></p>
+    </div>
+    
+    <div id="Для связи" class="tabcontent">
+      <h3>Контактные данные автора</h3>
+      <p>Почта: </p>
+      <p>Номер телефона: </p>
+    </div>
+
+    <script src="scripts/main.js"></script>                                         <!--подгрузка файла js, желательно делать в самом конце-->
   </body>
 </html>
+
