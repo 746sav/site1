@@ -1,6 +1,6 @@
 @media (min-width: 993px) {
   html {
-    font-size: 16px;                                              /*задание стиля шрифта, размера, цвета и тени текста*/
+    font-size: 25px;                                              /*задание стиля шрифта, размера, цвета и тени текста*/
     font-family: "Nanum Gothic Coding", monospace;
     color: aliceblue;
     text-shadow: 3px 3px 10px bisque;
@@ -17,11 +17,8 @@
     text-shadow: 1px 1px 10px bisque;
     
   }
-  html {
-    background-color: #A9A9A9;                                                                 /*цвет фона страницы*/
-  }
   body {                                                            /*размер блока тела текста, его цвет фона и рамок*/
-    width: 600px;
+    width: 700px;
     margin: 0 auto;
     background-color: rgb(105, 105, 105, 0.5);
     backdrop-filter: blur(5px);                                                                      /*размытие фона*/
@@ -55,9 +52,9 @@
   box-shadow: inset 0 3px 6px #bbb;                                                            /*тень кнопки внутрь*/
   border: 5px solid rgb(21, 12, 3,0);                                                       /*прозрачный фон границ*/
   font-size: 16px;                                               
-    font-family: "Nanum Gothic Coding", monospace;
-    color: #FAEBD7;
-    text-shadow: 3px 3px 10px bisque;
+  font-family: "Nanum Gothic Coding", monospace;
+  color: #FAEBD7;
+  text-shadow: 3px 3px 10px bisque;
 }
 
 .tab {
@@ -77,6 +74,7 @@
   padding: 14px 16px;
   transition: 0.3s;
   border-radius: 5px;
+  font-size: 16px; 
 }
 
 
@@ -116,12 +114,12 @@ color: #fff;
     text-shadow: 3px 3px 10px bisque;
   }
   h1 {                                                                         /*задание размера заголовка и центровки*/
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
   }
   p,
   li {                                        /*задание размера, разрывов строк и тени (размер и размытие) для списков*/
-    font-size: 16px;
+    font-size: 25px;
     line-height: 2;
     letter-spacing: 1px;
     text-shadow: 1px 1px 10px bisque;
@@ -130,17 +128,7 @@ color: #fff;
   html {
     background-color: #A9A9A9;                                                                 /*цвет фона страницы*/
   }
-  body {                                                            /*размер блока тела текста, его цвет фона и рамок*/
-    width: 700px;
-    margin: 0 auto;
-    background-color: rgb(105, 105, 105, 0.5);
-    backdrop-filter: blur(5px);                                                                      /*размытие фона*/
-    padding: 0 20px 20px 20px;
-    border: 1px solid #87b389;
-    border-radius: 5px;
-    
-  }
-  img {
+    img {
     display: block;
     margin: 0 auto;
   }
@@ -158,7 +146,7 @@ color: #fff;
   border-radius: 50px;                                                                      /*скругление углов кнопки*/
   box-shadow: inset 0 3px 6px #bbb;                                                            /*тень кнопки внутрь*/
   border: 5px solid rgb(21, 12, 3,0);                                                       /*прозрачный фон границ*/
-  font-size: 25px;                                               
+  font-size: 30px;                                               
     font-family: "Nanum Gothic Coding", monospace;
     color: #FAEBD7;
     text-shadow: 3px 3px 10px bisque;
@@ -178,6 +166,7 @@ color: #fff;
   padding: 14px 16px;
   transition: 0.3s;
   border-radius: 5px;
+  font-size: 25px; 
 }
 .tab button:hover {
   background-color: #FFEB3B;
