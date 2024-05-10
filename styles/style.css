@@ -8,20 +8,21 @@
   h1 {                                                                         /*задание размера заголовка и центровки*/
     font-size: 50px;
     text-align: center;
+    width: 400px;
   }
   p,
   li {                                        /*задание размера, разрывов строк и тени (размер и размытие) для списков*/
-    font-size: 16px;
+    font-size: 20px;
     line-height: 2;
     letter-spacing: 1px;
     text-shadow: 1px 1px 10px bisque;
     
   }
-  body {                                                            /*размер блока тела текста, его цвет фона и рамок*/
-    width: 700px;
+  body {                                                           
+    width: 1100px;
     margin: 0 auto;
     background-color: rgb(105, 105, 105, 0.5);
-    backdrop-filter: blur(5px);                                                                      /*размытие фона*/
+    backdrop-filter: blur(5px);                                                                    
     padding: 0 20px 20px 20px;
     border: 1px solid #87b389;
     border-radius: 5px;
@@ -51,20 +52,17 @@
   border-radius: 50px;                                                                      /*скругление углов кнопки*/
   box-shadow: inset 0 3px 6px #bbb;                                                            /*тень кнопки внутрь*/
   border: 5px solid rgb(21, 12, 3,0);                                                       /*прозрачный фон границ*/
-  font-size: 16px;                                               
+  font-size: 20px;                                               
   font-family: "Nanum Gothic Coding", monospace;
   color: #FAEBD7;
   text-shadow: 3px 3px 10px bisque;
 }
-
 .tab {
   overflow: hidden;
   border: 1px solid #87b389;
   background-color: #87b389;
   border-radius: 5px;
 }
-
-
 .tab button {
   background-color: inherit;
   float: left;
@@ -75,21 +73,16 @@
   transition: 0.3s;
   border-radius: 5px;
   font-size: 16px; 
+  justify-content: center;
 }
-
-
 .tab button:hover {
   background-color: #FFEB3B;
 }
-
-
 .tab button.active {
   background-color: #427344;
   border-radius: 5px;
 color: #fff;
 }
-
-
 .tabcontent {
   display: none;
   padding: 6px 12px;
@@ -97,8 +90,19 @@ color: #fff;
   border-radius: 5px;
   border-top: none;
 }
+.flex-container {
+  display: flex;  
 }
-
+main{
+  /* display: flex; */
+  flex: 1;
+  flex-direction: column;
+}
+}
+.flex-container2 {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (max-width: 992px)
 {
   html{

@@ -14,9 +14,38 @@
        
   </head>
   <body>
-
-    <h1>Мой главный заголовок</h1>
-    <button class="myButton">Сменить имя</button>                                                                   <!--смена имени кнопки -->
+    <div class="flex-container">
+      <header class="flex-item item-1"> 
+        <h1>Мой главный заголовок</h1>
+        <button class="myButton">Сменить имя</button>
+      </header>
+      <main>
+        <p></p>
+        <div class="tab">                                                                                       <!--Создание вкладок на странице-->
+          <button class="tablinks" onclick="openCity(event, 'Основное')">Основная информация</button>
+          <button class="tablinks" onclick="openCity(event, 'Ссылки')">Ссылки на работы</button>
+          <button class="tablinks" onclick="openCity(event, 'Для связи')">Для связи</button>
+        </div>
+        <div id="Основное" class="tabcontent">
+          <p>Данная страница является демонстрационным примером навыков ее автора.</p>
+        </div>
+        <div id="Ссылки" class="tabcontent">
+          <h3>Ссылки на работы автора</h3>
+          <p>Ссылка на материал по данной работе на Гитхаб: <a href="https://github.com/746sav/site1" title="Демонстрационный сайт" target="_blank">The project for my demo site</a></p>
+        </div>
+        <div id="Для связи" class="tabcontent">
+          <h3>Контактные данные автора</h3>
+          <p>Почта: </p>
+          <p>Номер телефона: </p>
+        </div>
+      </main> 
+      
+    </div>
+    <div class="flex-container2">
+      <footer class="flex-item item-5"> 
+        <p> *Данная страница создана в целях обучения</p>
+      </footer> 
+    </div>
     <style>
       .myButton {
         cursor: pointer;
@@ -25,43 +54,6 @@
         color: #6e9c70; /* Цвет текста */
       }
     </style>
-    <p>Данная страица является демонстрационным примером навыков ее автора.</p>
-    <!-- <p>Это <strong>одиночный</strong> абзац</p>
-    <h2>Мой заголовок верхнего уровня</h2>
-        <p>Mozilla, мы являемся мировым сообществом</p>
-            <ul>
-                <li>технологов</li>
-                <li>мыслителей</li>
-                <li>строителей</li>
-             </ul>
-        <p>работающих вместе ...</p>
-    <h3>Мой подзаголовок</h3>
-        <p>Mozilla, мы являемся мировым сообществом</p>
-            <ol>
-                <li>технологов</li>
-                <li>мыслителей</li>
-                <li>строителей</li>
-            </ol>
-        <p>работающих вместе ...</p>
-    <h4>Мой под-подзаголовок</h4> -->
-    
-    
-    <div class="tab">                                                                                       <!--Создание вкладок на странице-->
-      <button class="tablinks" onclick="openCity(event, 'Ссылки')">Ссылки на работы</button>
-      <button class="tablinks" onclick="openCity(event, 'Для связи')">Для связи</button>
-    </div>
-    
-    <div id="Ссылки" class="tabcontent">
-      <h3>Ссылки на работы автора</h3>
-      <p>Ссылка на материал по данной работе на Гитхаб: <a href="https://github.com/746sav/site1" title="Демонстрационный сайт" target="_blank">The project for my demo site</a></p>
-    </div>
-    
-    <div id="Для связи" class="tabcontent">
-      <h3>Контактные данные автора</h3>
-      <p>Почта: </p>
-      <p>Номер телефона: </p>
-    </div>
-
     <script src="scripts/main.js"></script>                                         <!--подгрузка файла js, желательно делать в самом конце-->
   </body>
 </html>
