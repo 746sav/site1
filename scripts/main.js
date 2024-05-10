@@ -27,14 +27,14 @@ var myHeading = document.querySelector("h1");
 function setUserName() {                                   //функция задания имени и полуения ранее заданного из кэша
     var myName = prompt("Please enter your name.");
     localStorage.setItem("name", myName);
-    myHeading.textContent = "Hello, " + myName + ", it's my first site";
+    myHeading.textContent = "Hello, " + myName + ", welcome to my demo site";
   }
 
   if (!localStorage.getItem("name")) {
     setUserName();
   } else {
     var storedName = localStorage.getItem("name");
-    myHeading.textContent = "Hello, " + storedName + ", it's my first site";
+    myHeading.textContent = "Hello, " + storedName + ", welcome to my demo site";
   }
   myButton.onclick = function () {                                                              //обработчик события
     setUserName();
